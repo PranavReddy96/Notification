@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "experimentalDecorators": true,
+      "allowJs": true,
+      "emitDecoratorMetadata": true,
+      "target": "ES6",
+      "module": "CommonJS",
+      "moduleResolution": "node",   // Added to help resolve modules correctly
+      "outDir": "./dist",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "baseUrl": "./src",           // Added to resolve imports from the src folder
+      "paths": {
+        "*": ["node_modules/*", "src/*"]  // Ensures TypeScript can resolve local modules
+      }
+    },
+    "include": [
+      "src/**/*.ts"
+    ]
+  }
+  
